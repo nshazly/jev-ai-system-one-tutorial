@@ -1,0 +1,47 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Date: Sat, 03 Oct 2026 20:40:17 GMT
+Content-Length: 605
+Connection: close
+
+{
+  "model": "nimble",
+  "answers": {
+    "route": {
+      "type": "choice",
+      "choice": "billing",
+      "probabilities": {
+        "billing": 0.9764933323963045,
+        "bug": 0.019457985352777537,
+        "account": 0.001437836434247814,
+        "other": 0.0026108458166702797
+      },
+      "confidence": 0.9099596034549088
+    },
+    "urgent": {
+      "type": "noul",
+      "noul": 0.6467722584041427
+    },
+    "severity": {
+      "type": "score",
+      "score": 1.081462112098966,
+      "legend": {
+        "0": "trivial",
+        "1": "minor",
+        "2": "major",
+        "3": "critical"
+      },
+      "probabilities": {
+        "0": 0.26761473141729325,
+        "1": 0.4218337599659727,
+        "2": 0.27202617371720916,
+        "3": 0.03852533489952496
+      },
+      "confidence": 0.13692973491203408
+    }
+  },
+  "usage": {
+    "input_tokens": 1008,
+    "output_tokens": 4
+  }
+}
