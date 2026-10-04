@@ -1,0 +1,37 @@
+# POST https://api.defapi.org/api/v1/decisions HTTP/1.1
+# Authorization: Bearer {{$dotenv DEFAPI_API_KEY}}
+POST http://localhost:11434/v1/systemone
+Content-Type: application/json
+
+{
+  "model": "nimble",
+  "state": {
+    "subject": "Refund request",
+    "body": "I was charged twice for my October invoice."
+  },
+  "questions": {
+    "route": {
+      "type": "choice",
+      "instructions": "Which team should handle this support ticket?",
+      "criteria": {
+        "billing": "Charges, refunds, invoices, payment methods",
+        "bug": "Something in the product is broken or erroring",
+        "account": "Login, password, profile or access problems",
+        "other": null
+      }
+    },
+    "urgent": {
+      "type": "noul",
+      "instructions": "Does this ticket need a reply within the hour?",
+      "criteria": {
+        "false": "Can wait for normal queue handling",
+        "true": "Customer is blocked or losing money right now"
+      }
+    },
+    "severity": {
+      "type": "score",
+      "instructions": "How severe is the customer's problem?",
+      "criteria": ["trivial", "minor", "major", "critical"]
+    }
+  }
+}
