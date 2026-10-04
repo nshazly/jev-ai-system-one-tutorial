@@ -32,6 +32,10 @@ jobs:
           python-version: ${{ matrix.python-version }}
           enable-cache: true
 
+      # ShellCheck is preinstalled on GitHub's Ubuntu runners, so no extra action is needed.
+      - name: Lint shell scripts
+        run: shellcheck scripts/*.sh
+
       - name: Install dependencies
         run: uv sync --locked
 
