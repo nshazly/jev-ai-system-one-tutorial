@@ -1,0 +1,20 @@
+{"id": "t01", "text": "I was charged twice for my Pro subscription this month.", "label": "billing"}
+{"id": "t02", "text": "Can I get an invoice with our company VAT number on it?", "label": "billing"}
+{"id": "t03", "text": "Please cancel my plan and refund the unused months.", "label": "billing"}
+{"id": "t04", "text": "Your pricing page says $12 but my card was billed $15.", "label": "billing"}
+{"id": "t05", "text": "How do I switch from monthly to annual billing?", "label": "billing"}
+{"id": "t06", "text": "The export to CSV button does nothing in Firefox.", "label": "bug"}
+{"id": "t07", "text": "App crashes every time I open the settings screen on Android.", "label": "bug"}
+{"id": "t08", "text": "Dashboard charts show yesterday's data even after refreshing.", "label": "bug"}
+{"id": "t09", "text": "Getting a 500 error when uploading files larger than 10 MB.", "label": "bug"}
+{"id": "t10", "text": "Dark mode makes the text in tables invisible.", "label": "bug"}
+{"id": "t11", "text": "It would be great if we could schedule reports to be emailed weekly.", "label": "feature"}
+{"id": "t12", "text": "Please add a Slack integration for notifications.", "label": "feature"}
+{"id": "t13", "text": "Can you support SSO with Okta? We need it for our rollout.", "label": "feature"}
+{"id": "t14", "text": "I'd love keyboard shortcuts for switching between projects.", "label": "feature"}
+{"id": "t15", "text": "Any plans to offer an API for bulk importing contacts?", "label": "feature"}
+{"id": "t16", "text": "I forgot my password and the reset email never arrives.", "label": "account"}
+{"id": "t17", "text": "How do I change the email address on my account?", "label": "account"}
+{"id": "t18", "text": "I lost my phone and can't get past two-factor authentication.", "label": "account"}
+{"id": "t19", "text": "Please delete my account and all my data.", "label": "account"}
+{"id": "t20", "text": "My teammate left the company; how do I transfer ownership of the workspace?", "label": "account"}
