@@ -183,3 +183,13 @@ Nimble shows how a model like this is made. It's a LoRA fine-tune of Qwen3.5-9B.
 - **Guardrails:**
   - [Real-time LLM guardrails with Jev](https://arize.com/blog/llm-guardrails-jev/) (Arize)
   - [typesafe-guardrails demo repo](https://github.com/jimbobbennett/typesafe-guardrails)
+
+## Security
+
+To report a vulnerability, see [SECURITY.md](SECURITY.md). Please use private reporting, not public issues. CI runs lint and the offline tests with a read-only token, and Dependabot keeps the Python dependencies and pinned actions up to date.
+
+## License
+
+Copyright 2026 Neill Shazly. Licensed under the [Apache License, Version 2.0](LICENSE). You may use, modify and distribute this code under its terms, which include a patent grant and a requirement to keep the copyright and license notices.
+
+The license covers this repository's code and docs. It doesn't cover the models or services it calls (Nimble, Jev, DefAPI), which have their own licenses and terms. The saved model outputs in `out/` and `api-examples/` are included as examples.
