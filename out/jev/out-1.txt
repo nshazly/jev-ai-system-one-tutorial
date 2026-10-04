@@ -1,0 +1,24 @@
+t01  billing  conf=1.00  219ms  [bug=0.00 feature=0.00 account=0.00 billing=1.00]  ✓
+t02  billing  conf=1.00  207ms  [bug=0.00 billing=1.00 feature=0.00 account=0.00]  ✓
+t03  billing  conf=1.00  158ms  [bug=0.00 account=0.00 billing=1.00 feature=0.00]  ✓
+t04  billing  conf=1.00  178ms  [feature=0.00 account=0.00 billing=1.00 bug=0.00]  ✓
+t05  billing  conf=1.00  292ms  [bug=0.00 account=0.00 billing=1.00 feature=0.00]  ✓
+t06  bug      conf=1.00  166ms  [bug=1.00 feature=0.00 account=0.00 billing=0.00]  ✓
+t07  bug      conf=1.00  160ms  [bug=1.00 feature=0.00 billing=0.00 account=0.00]  ✓
+t08  bug      conf=1.00  171ms  [billing=0.00 feature=0.00 bug=1.00 account=0.00]  ✓
+t09  bug      conf=1.00  142ms  [account=0.00 billing=0.00 bug=1.00 feature=0.00]  ✓
+t10  bug      conf=1.00  143ms  [feature=0.00 billing=0.00 account=0.00 bug=1.00]  ✓
+t11  feature  conf=0.99  156ms  [bug=0.00 account=0.00 feature=1.00 billing=0.00]  ✓
+t12  feature  conf=1.00  248ms  [bug=0.00 account=0.00 billing=0.00 feature=1.00]  ✓
+t13  feature  conf=0.81  173ms  [bug=0.00 feature=0.86 account=0.14 billing=0.00]  ✓
+t14  feature  conf=1.00  177ms  [bug=0.00 account=0.00 billing=0.00 feature=1.00]  ✓
+t15  feature  conf=1.00  189ms  [billing=0.00 account=0.00 bug=0.00 feature=1.00]  ✓
+t16  account  conf=1.00  270ms  [account=1.00 bug=0.00 billing=0.00 feature=0.00]  ✓
+t17  account  conf=1.00  169ms  [bug=0.00 account=1.00 billing=0.00 feature=0.00]  ✓
+t18  account  conf=1.00  441ms  [bug=0.00 feature=0.00 billing=0.00 account=1.00]  ✓
+t19  account  conf=1.00  194ms  [bug=0.00 account=1.00 billing=0.00 feature=0.00]  ✓
+t20  account  conf=1.00  152ms  [bug=0.00 account=1.00 billing=0.00 feature=0.00]  ✓
+
+accuracy 100% (20/20)
+confidence >= 0.50: 20/20 kept, accuracy 100%
+latency p50 175ms, max 441ms (warm-up excluded)
