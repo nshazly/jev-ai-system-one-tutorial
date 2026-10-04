@@ -158,6 +158,7 @@ exercises/ticket_router/    the 20-ticket routing exercise and its CLI
 tests/                      offline tests (httpx.MockTransport) and one live Nimble test
 out/                        saved runs: out/nimble/, out/jev/
 api-examples/               the same request sent to Ollama (Nimble) and DefAPI (Jev), with both responses
+scripts/                    configure-github-repo.sh: applies this repo's GitHub security settings (dry run by default)
 ```
 
 ## Build your own Jev-style model
