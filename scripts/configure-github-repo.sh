@@ -43,7 +43,7 @@ if [[ -z "$REPO" ]]; then
 fi
 
 RULESET_NAME="protect-main"
-REQUIRED_CHECKS=("test (3.12)" "test (3.13)")  # job names from .github/workflows/ci.yml
+REQUIRED_CHECKS=("lint" "test (3.12)" "test (3.13)")  # job names from .github/workflows/ci.yml
 GITHUB_ACTIONS_APP_ID=15368                    # accept those checks only from GitHub Actions
 ADMIN_ROLE_ID=5                                # built-in repository "admin" role
 TOPICS='["jev","ollama","nimble","decision-models","llm-guardrails","python","tutorial"]'
