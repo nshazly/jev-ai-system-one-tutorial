@@ -1,0 +1,23 @@
+version: 2
+updates:
+  # Python dependencies from pyproject.toml / uv.lock
+  - package-ecosystem: "uv"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7 # give new releases a week before proposing them
+    groups:
+      python-dependencies:
+        patterns: ["*"]
+
+  # SHA-pinned actions in .github/workflows
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
+    groups:
+      github-actions:
+        patterns: ["*"]
